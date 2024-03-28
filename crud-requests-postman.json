@@ -1,0 +1,179 @@
+
+{
+	"info": {
+		"_postman_id": "d5251b62-4c72-4b95-b1ce-60330298f737",
+		"name": "crud-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "stage-2",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"first_name\":\"Matt\",\n\t\"last_name\":\"Loo\",\n\t\"email\":\"mm@loo.com\",\n\t\"password\" :\"qwerty\",\n\t\"phone\":\"972-567-1231\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create a user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"first_name\":\"John\",\n\t\"last_name\":\"Malkovitch\",\n\t\"email\":\"aaa@bb\",\n\t\"phone\":\"035278889\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3030/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/api/users/5bf3e18d2d6c2910e8e7ab08",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"users",
+						"5bf3e18d2d6c2910e8e7ab08"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"first_name\":\"John\",\n\t\"last_name\":\"Malkovitch\",\n\t\"email\":\"aa@bb\",\n\t\"phone\":\"035278889\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3030/api/users/5bf3f0e4a43d4211d7d8ee4d",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"users",
+						"5bf3f0e4a43d4211d7d8ee4d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"first_name\":\"John\",\n\t\"last_name\":\"Malkovtich\",\n\t\"email\":\"john.malkovitch@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3030/api/users/5bf3e18d2d6c2910e8e7ab08",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"users",
+						"5bf3e18d2d6c2910e8e7ab08"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
